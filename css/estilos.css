@@ -1,0 +1,467 @@
+/* Reset general para remover márgenes y padding predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuración básica para el cuerpo de la página */
+body, html {
+    width: 100%; /* Ancho completo de la pantalla */
+    height: 100%; /* Alto completo de la pantalla */
+    font-family: 'Work Sans'; /* Fuente principal */
+    color: #000000; /* Color de texto negro */
+    display: flex; /* Flexbox para estructura */
+    font-weight: 400; /* Peso de fuente regular */
+    flex-direction: column; /* Elementos en columna */
+    justify-content: space-between; /* Espacio entre header y footer */
+    align-items: center; /* Elementos centrados */
+}
+/* Estilo del encabezado */
+header {
+    background-color: #000000; /* Fondo negro */
+    width: 100%; /* Ancho completo */
+    display: flex; /* Estructura con flexbox */
+    font-weight: 400; /* Peso de fuente regular */
+    flex-direction: column; /* Columnas para alinear elementos */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centrado */
+    padding-bottom: 40px; /* Espaciado inferior */
+}
+
+/* Estilo para el logo en el encabezado */
+header img {
+    width: 20px; /* Ancho del logo */
+}
+
+/* Navegación en el encabezado */
+header nav ul {
+    display: flex; /* Elementos en línea */
+    gap: 20px; /* Espacio entre elementos */
+    list-style-type: none; /* Quita viñetas */
+}
+
+/* Estilo de los enlaces de navegación */
+nav a {
+    text-decoration: none; /* Quita subrayado */
+    font-size: 0.75rem; /* Tamaño de texto */
+    color: #FFFFFF; /* Color de texto blanco */
+}
+
+/* Título principal en el main */
+main h1 {
+    font-size: 6rem; /* Tamaño grande */
+    font-weight: 700; /* Fuente negrita */
+    letter-spacing: -5px; /* Espaciado negativo entre letras */
+}
+
+/* Estilo de subtítulos */
+h2 {
+    text-align: center; /* Centrado */
+    margin: 25px; /* Espaciado superior e inferior */
+}
+
+/* Estilo de encabezados h3 */
+h3 {
+    font-weight: 700; /* Fuente negrita */
+    max-width: 50%; /* Ancho máximo al 50% */
+    margin: 50px auto 10px auto; /* Márgenes verticales */
+    border-bottom: 2px solid black; /* Línea inferior */
+}
+
+
+/* Encabezado h4 */
+h4 {
+    font-weight: 700; /* Fuente negrita */
+    max-width: 50%; /* Ancho máximo */
+    margin: -10px auto 10px auto; /* Márgenes */
+}
+
+/* Estilo de párrafos en el main */
+main p {
+    font-weight: 400; /* Fuente regular */
+    font-size: 0.75rem; /* Tamaño pequeño */
+    max-width: 50%; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+/* Artículos dentro de secciones */
+section article {
+    font-weight: 700; /* Fuente negrita */
+    margin-left: 3%; /* Margen izquierdo */
+}
+
+/* Párrafos en artículos */
+article p {
+    padding-left: 4.5%; /* Sangría izquierda */
+}
+section dl {
+    max-width: 50%; /* Ancho máximo para la lista */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Estilo para cada término de definición */
+section dl dt {
+    font-weight: 700; /* Fuente negrita */
+    margin-left: 4%; /* Margen izquierdo */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Estilo para cada descripción de término */
+section dl dd {
+    font-weight: 400; /* Fuente regular */
+    padding-left: 8%; /* Sangría izquierda */
+    margin-bottom: 10px; /* Espaciado inferior */
+    font-size: 0.75rem; /* Tamaño de fuente */
+}
+
+/* Estilo de figura para videos */
+figure {
+    width: 560px; /* Ancho fijo */
+    height: 315px; /* Alto fijo */
+    text-align: center; /* Texto centrado */
+    margin: 0 auto; /* Centrado */
+}
+
+/* Iframe para videos */
+iframe {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 100%; /* Alto completo */
+}
+figcaption {
+    text-align: left; /* Alineación izquierda */
+    font-size: 0.5625rem; /* Tamaño de texto pequeño */
+}
+
+/* Lista en sección */
+section ul {
+    margin-left: 27.5%; /* Margen izquierdo */
+}
+/* Estilo del pie de página */
+footer {
+    background-color: #000000; /* Fondo negro */
+    color: #FFFFFF; /* Texto blanco */
+    width: 100%; /* Ancho completo */
+}
+
+/* Navegación en el pie de página */
+footer nav {
+    padding-left: 25%; /* Margen izquierdo */
+    padding-top: 10px; /* Margen superior */
+}
+/* Enlaces en el pie de página */
+footer a {
+    color: white; /* Color blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Lista en el pie de página */
+footer ul {
+    margin-bottom: 20px; /* Margen inferior */
+}
+/* Texto en el pie de página */
+footer p {
+    margin-top: 5px; /* Margen superior */
+    font-size: 0.625rem; /* Tamaño de texto */
+}
+
+/* Estilo de tablas */
+table {
+    width: 55%; /* Ancho relativo */
+    border-collapse: collapse; /* Colapsa bordes */
+    margin: 20px auto; /* Centrado con margen */
+    font-size: 1rem; /* Tamaño de texto */
+}
+
+/* Estilo del caption de tabla */
+caption {
+    font-weight: 400; /* Fuente regular */
+    font-size: 1.2rem; /* Tamaño mayor */
+    border-top: 1px solid #000000; /* Línea superior */
+    border-bottom: 1px solid #000000; /* Línea inferior */
+}
+
+/* Celdas de tabla */
+th, td {
+    padding: 15px; /* Espaciado interior */
+    text-align: left; /* Alineación izquierda */
+}
+/* Estilo de encabezados de tabla */
+th {
+    font-weight: 400; /* Fuente regular */
+}
+
+/* Primera columna de cada fila */
+tr td:first-child {
+    font-weight: 700; /* Fuente negrita */
+}
+/* Estilos para el cuerpo de la tabla */
+tbody {
+    border-top: 1px solid #000000; /* Agrega una línea superior al contenido del tbody */
+}
+
+/* Filas impares en el cuerpo de la tabla */
+tbody tr:nth-child(odd) {
+    background-color: #6BDEC8; /* Color de fondo para filas impares */
+}
+
+/* Estilo del pie de tabla */
+#table--caption__abajo {
+    text-align: left; /* Alinea el texto a la izquierda */
+    border-bottom: 1px solid #000000; /* Línea inferior */
+    font-weight: 400; /* Peso de fuente regular */
+    font-size: 0.75rem; /* Tamaño de fuente pequeño */
+}
+
+/* Estilos generales para el formulario */
+form {
+    margin: 20px auto; /* Centra el formulario horizontalmente y le da espacio arriba y abajo */
+    max-width: 40%; /* Define un ancho máximo para el formulario */
+    margin-bottom: 50px; /* Espacio inferior */
+}
+/* Estilos para los grupos de campo del formulario */
+fieldset {
+    border: 1px solid #000000; /* Borde alrededor del grupo de campos */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 1.5rem; /* Espacio inferior */
+}
+
+/* Estilos para el texto de la leyenda del fieldset */
+legend {
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del texto */
+    padding: 0 0.5rem; /* Espaciado horizontal alrededor del texto */
+}
+
+/* Estilos para el botón de envío */
+button[type="submit"] {
+    display: inline-block; /* Botón en línea */
+    padding: 0.5rem 1rem; /* Espaciado alrededor del texto */
+    font-size: 1rem; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: white; /* Color del texto */
+    background-color: #942C0B; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor a mano */
+    margin-top: 1rem; /* Espacio superior */
+    margin-left: 0; /* Alineación a la izquierda */
+}
+
+/* Estilo para el botón al pasar el ratón */
+button[type="submit"]:hover {
+    background-color: #f0c040; /* Color de fondo al pasar el cursor */
+}
+
+/* Grupo de formulario para entradas en columna */
+.form-group {
+    display: flex; /* Flex para organización */
+    flex-direction: column; /* Apila los elementos en columna */
+    margin-bottom: 1rem; /* Espacio inferior */
+}
+
+/* Estilos para las etiquetas de los grupos de formulario */
+.form-group label {
+    font-weight: 400; /* Peso de fuente regular */
+    margin-bottom: 0.5rem; /* Espacio inferior para separación */
+}
+/* Estilos para las entradas de formulario, select y textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.5rem; /* Espaciado interno */
+    border: 1px solid #000000; /* Borde de las entradas */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Mínimo alto del área de comentarios */
+#comentarios { 
+    min-height: 200px; /* Altura mínima del área de comentarios */
+}
+/* Grupo de radio botones */
+.radio-group {
+    display: flex; /* Flex para organización */
+    flex-direction: column; /* Apila elementos en columna */
+    gap: 0.5rem; /* Espacio entre opciones */
+    margin-top: 0.5rem; /* Espacio superior */
+}
+
+/* Estilo de las etiquetas de los radio botones */
+.radio-group label {
+    display: inline-block; /* Alinea en bloque en línea */
+    margin-left: 0.5rem; /* Espacio entre el botón y la etiqueta */
+    font-weight: normal; /* Peso normal de fuente */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem; /* Espacio entre el botón y la etiqueta */
+}
+/* Contenedor en columnas */
+.column-container {
+    display: flex; /* Flex para organización */
+    gap: 1.5rem; /* Espacio entre columnas */
+    flex-wrap: wrap; /* Permite envolver elementos en múltiples líneas */
+}
+
+/* Configuración de ancho de las columnas del formulario */
+.column-container .form-group {
+    flex: 0 0 45%; /* Ancho de cada columna */
+    box-sizing: border-box; /* Incluye padding en el ancho */
+}
+/* Asegura que las etiquetas y entradas se extiendan en columnas */
+.column-container .form-group label,
+.column-container .form-group input {
+    width: 100%; /* Ancho completo en columna */
+}
+
+/* Ancho del select en columnas */
+.column-container .form-group select {
+    width: 107%; /* Ancho ajustado */
+}
+/* Texto en formularios */
+.formulario--p {
+    font-weight: 400; /* Peso de fuente regular */
+    font-size: 0.5625rem; /* Fuente pequeña */
+    max-width: 100%; /* Ancho máximo */
+    margin: 0 auto; /* Centración automática */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Texto de privacidad */
+.formulario--p__privacidad {
+    font-weight: 400; /* Peso de fuente regular */
+    font-size: 0.75rem; /* Tamaño de fuente */
+    max-width: 100%; /* Ancho máximo */
+    margin: 0 auto; /* Centración automática */
+    margin-bottom: 20px; /* Espacio inferior */
+    line-height: 1.5; /* Altura de línea */
+}
+/* Fondo de portada con imagen */
+#portada {
+    background-image: url('../img/home-hero.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir el área de fondo */
+    background-position: center; /* Centra la imagen */
+    text-align: center; /* Centra el texto dentro del div */
+}
+
+/* Lista en la portada */
+.portada--ul {
+    display: flex; /* Organiza elementos en línea */
+    gap: 20px; /* Espacio entre elementos */
+    list-style-type: none; /* Sin viñetas */
+}
+
+/* Espaciado superior en la cabecera de portada */
+#portada--cabezera__masAbajo {
+    padding-top: 20px; /* Añade espacio superior */
+}
+
+/* Estilos para el isologo */
+.isologo {
+    width: 60px; /* Ancho del isologo */
+    margin: 0px auto; /* Centrado automático */
+}
+/* Texto grande en la portada */
+.portada-p {
+    font-size: 2rem; /* Tamaño grande de fuente */
+    font-weight: 700; /* Negrita */
+    margin-bottom: 20px; /* Espacio inferior */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Estilos para el pie de página en la portada */
+#portada--footer {
+    font-size: 0.8rem; /* Tamaño pequeño de fuente */
+    margin-bottom: 20px; /* Espacio inferior */
+    width: auto; /* Ancho automático */
+}
+/* Estilos de enlaces sin texto */
+.enlaces--NOTexto:hover {
+    color: #6BDEC8; /* Cambia color al pasar el cursor */
+}
+
+/* Estilo de enlaces tipo botón */
+.enlaces--textoBoton {
+    color: #942C0B; /* Color inicial */
+    text-decoration: underline dotted; /* Subrayado punteado */
+}
+.enlaces--textoBoton:hover {
+    color: #942C0B; /* Color al pasar el cursor */
+    text-decoration: underline solid; /* Subrayado sólido */
+}
+
+/* Texto con fondo negro */
+.Texto--fondoNegro {
+    color: #FFFFFF; /* Texto en blanco */
+}
+/* Elemento sin fondo */
+.index__sinfondo {
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Enlace activo en el menú */
+#enlace--activo {
+    color: white; /* Color blanco */
+    border-bottom: 2px solid white; /* Borde inferior blanco */
+    padding-bottom: 6px; /* Espacio inferior */
+}
+#enlace--activo:hover {
+    color: #6BDEC8; /* Color al pasar el cursor */
+}
+#enlace--titulo {
+    text-decoration: none;
+}
+
+
+#enlace--titulo:hover h1 {
+    color: #6BDEC8; /* Cambia el color del texto del <h1> al pasar el ratón */
+}
+
+/* Texto oscuro en negrita */
+.texto__oscuro {
+    font-weight: 700; /* Negrita */
+}
+/* Texto pequeño */
+.p__masPequeño {
+    font-size: 0.5625rem; /* Tamaño de fuente pequeño */
+}
+
+/* Espaciado en rubrica */
+.rubrica {
+    padding-left: 25%; /* Espacio a la izquierda */
+    padding-top: 10px; /* Espacio superior */
+    padding-bottom: 20px; /* Espacio inferior */
+}
+/* Estilo para el año */
+#año {
+    font-weight: 700; /* Negrita */
+    margin-top: -25px; /* Espaciado superior negativo */
+    text-align: center; /* Centrado */
+    text-indent: 15px; /* Sangría inicial */
+    font-size: 3.125rem; /* Tamaño de fuente grande */
+}
+/* Contenedor de foto de curso */
+#foto--curso {
+    background-color: #000000; /* Fondo negro */
+    width: 560px; /* Ancho */
+    height: 315px; /* Alto */
+}
+/* Imagen dentro del contenedor de foto */
+#foto--curso img {
+    width: 560px; /* Ancho igual al contenedor */
+    height: 315px; /* Alto igual al contenedor */
+}
+
+/* Pie de foto dentro del contenedor de foto */
+#foto--curso figcaption {
+    text-align: left; /* Alineación a la izquierda */
+    font-size: 0.75rem; /* Tamaño de fuente pequeño */
+    color: #000000; /* Color del texto */
+}
+#p__gigante {
+    text-align: left; /* Alineación a la izquierda */
+    font-weight: 700; /* Negrita */
+    margin: 20px auto; /* Centración automática */
+    font-size: 1.3125rem; /* Tamaño de fuente grande */
+    max-width: 40%; /* Ancho máximo */
+    margin-top: 40px; /* Espacio superior */
+}

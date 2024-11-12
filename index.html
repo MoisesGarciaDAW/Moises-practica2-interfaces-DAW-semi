@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Declaramos que el documento es HTML5 -->
+<html lang="es" id="portada">
+<head>
+    <!-- Definimos la codificación de caracteres como UTF-8 para soportar caracteres especiales como acentos y símbolos -->
+    <meta charset="UTF-8">
+    <!-- Ajustamos el diseño para que se adapte a diferentes tamaños de pantalla (responsive design) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Proporcionamos una descripción del contenido de la página, útil para motores de búsqueda -->
+    <meta name="description" content="Página principal de un taller de alfarería.">
+    <!-- Especificamos el título de la página que aparece en la pestaña del navegador -->
+    <title>Pagina inicio del taller de alfarería</title>
+    <!-- Enlazamos el archivo CSS que contiene los estilos de la página -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Preconectamos con Google Fonts para mejorar la carga de fuentes personalizadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Enlazamos una fuente específica desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<!-- al bode li ponemos un classe para aplicar estilos globales -->
+<body class="Texto--fondoNegro">
+    <!-- Iniciamos el encabezado de la página -->
+    <header class="index__sinfondo">
+        <!-- Creamos un menú de navegación -->
+        <nav>
+            <!-- inicializamos la lista desordenada -->
+            <ul id="portada--cabezera__masAbajo" class="portada--ul">
+                <!-- Elemento de lista que contiene un enlace al apartado "Cerámica" -->
+                <li>
+                    <a href="que-es-la-ceramica.html" class="enlaces--NOTexto">CERÁMICA</a>
+                </li>
+                <!-- Elemento de lista que contiene un enlace al apartado "Cursos" -->
+                <li>
+                    <a href="cursos.html" class="enlaces--NOTexto">CURSOS</a>
+                </li>
+                <!-- Elemento de lista que contiene un enlace al apartado "Inscripción" -->
+                <li>
+                    <a href="inscripcion-cursos.html" class="enlaces--NOTexto">INSCRIPCIÓN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Inicio del contenido principal de la página -->
+    <main>
+        <!-- inicializamos una sección que contreda el contenido en sí -->
+        <section>
+            <!-- Mostramos el logotipo-->
+            <img src="img/isologo-taller.png" alt="Isologo de El Taller" class="isologo">
+            <!-- y el título principal con el nombre del taller -->
+            <h1>el taller</h1>
+            <!--por ultimo añadimos un p con un estilo propio -->
+            <p class="portada-p">Modela tu creatividad</p>
+        </section>
+    </main>
+    <!-- Inicio del pie de página -->
+    <footer class="index__sinfondo" id="portada--footer">
+        <!-- creamos una lista desordenada que contendrá los enlaces del footer -->
+        <ul class="portada--ul">
+            <!-- Elemento de lista con enlace al aviso legal -->
+            <li>
+                <a href="" class="enlaces--NOTexto">Aviso legal</a>
+            </li>
+            <!-- Elemento de lista con enlace a la política de privacidad -->
+            <li>
+                <a href="" class="enlaces--NOTexto">Política de privacidad</a>
+            </li>
+            <!-- Elemento de lista con enlace a la política de cookies -->
+            <li>
+                <a href="" class="enlaces--NOTexto">Política de cookies</a>
+            </li>
+        </ul>
+        <!-- por útlimo tendremos un enlace con el autor de la página -->
+        <p>2023 © Moisés García García</p>
+        <!-- Créditos para la imagen y el isologo -->
+        <p>Foto de 
+            <a href="https://unsplash.com/@courtneymcook" class="enlaces--NOTexto">Courtney Cook</a> 
+            en <a href="https://unsplash.com/es/fotos/QRVSQH7OeX4" class="enlaces--NOTexto">Unsplash</a> 
+            | Isologo por <a href="https://www.flaticon.com/free-icons/circle" class="enlaces--NOTexto">Freepik - Flaticon</a></p>
+    </footer>
+</body>
+</html>

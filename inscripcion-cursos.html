@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- Declaramos que el documento sigue el estándar HTML5 -->
+<html lang="es">
+<head>
+    <!-- Configuramos la codificación de caracteres UTF-8 para soportar caracteres especiales -->
+    <meta charset="UTF-8">
+    <!-- Hacemos el diseño responsive para que se adapte a diferentes tamaños de pantalla -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descripción breve de la página, útil para los motores de búsqueda -->
+    <meta name="description" content="Página de inscripción a los cursos de alfarería.">
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Página inscripción curso alfarería</title>
+    <!-- Enlazamos el archivo CSS de estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Preconexiones a Google Fonts para mejorar la carga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente "Work Sans" desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado principal de la página -->
+    <header>
+        <!-- Título del taller con el logo y el nombre "el taller" -->
+        <a href="index.html" id="enlace--titulo">
+            <h1 class="Texto--fondoNegro">
+                <img src="img/isologo-taller.png" alt="El Taller logo"> el taller
+            </h1>
+        </a>
+        <!-- Menú de navegación principal -->
+        <nav>
+            <ul>
+                <!-- Enlace a la página de "Cerámica" -->
+                <li>
+                    <a href="que-es-la-ceramica.html" class="enlaces--NOTexto">CERÁMICA</a>
+                </li>
+                <!-- Enlace a la página de "Cursos" -->
+                <li>
+                    <a href="cursos.html" class="enlaces--NOTexto">CURSOS</a>
+                </li>
+                <!-- Enlace a la página de "Inscripción" con id para indicar que está activo -->
+                <li>
+                    <a href="inscripcion-cursos.html" id="enlace--activo" class="enlaces--NOTexto">INSCRIPCIÓN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Formulario de inscripción -->
+        <form action="#" method="post">
+            <!-- Título del formulario -->
+            <h2>Inscripción a los cursos</h2>
+            <!-- Indicamos que algunos campos son obligatorios -->
+            <p class="formulario--p">Los campos señalados con * son obligatorios</p>
+        
+            <!-- Primer grupo de campos del formulario -->
+            <fieldset class="column-container">
+                <legend>Detalles de la inscripción</legend>
+                
+                <!-- Campo de texto para el nombre -->
+                <div class="form-group">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" required
+                           pattern="^[A-Za-zÀ-ÿ' -]{2,64}$" maxlength="64"
+                           title="El nombre debe contener entre 2 y 64 caracteres y solo puede incluir letras, apóstrofes o guiones.">
+                </div>
+        
+                <!-- Campo de texto para los apellidos -->
+                <div class="form-group">
+                    <label for="apellidos">Apellidos *</label>
+                    <input type="text" id="apellidos" name="apellidos" required
+                           pattern="^[A-Za-zÀ-ÿ' -]{2,128}$" maxlength="128"
+                           title="Los apellidos deben contener entre 2 y 128 caracteres y solo pueden incluir letras, apóstrofes o guiones.">
+                </div>
+        
+                <!-- Campo de correo electrónico -->
+                <div class="form-group">
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" id="correo" name="correo" required
+                           title="Por favor, introduce una dirección de correo electrónico válida.">
+                </div>
+        
+                <!-- Campo para el teléfono -->
+                <div class="form-group">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required
+                           pattern="[0-9]{9,15}"
+                           title="El teléfono debe contener entre 9 y 15 dígitos.">
+                </div>
+        
+                <!-- Campo de fecha de nacimiento -->
+                <div class="form-group">
+                    <label for="fecha_nacimiento">Fecha de nacimiento *</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required
+                           title="Por favor, selecciona una fecha de nacimiento válida.">
+                </div>
+        
+                <!-- Menú desplegable para seleccionar el curso -->
+                <div class="form-group">
+                    <label for="curso">Curso *</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Selecciona el curso</option>
+                        <option value="torno">Torno</option>
+                        <option value="ceramica">Cerámica</option>
+                        <option value="modelado">Modelado</option>
+                        <option value="esmaltes">Esmaltes</option>
+                        <option value="joyeria">Joyería cerámica</option>
+                    </select>
+                </div>
+            </fieldset>
+        
+            <!-- Segundo grupo de campos: otras informaciones -->
+            <fieldset>
+                <legend>Otras informaciones</legend>
+        
+                <!-- Pregunta si ha hecho otros cursos -->
+                <fieldset class="form-group">
+                    <legend>¿Has hecho otros cursos con nosotros? *</legend>
+                    <div class="radio-group">
+                        <label><input type="radio" id="curso_si" name="otros_cursos" value="si" required> Sí</label>
+                        <label><input type="radio" id="curso_no" name="otros_cursos" value="no" required> No</label>
+                    </div>
+                </fieldset>
+        
+                <!-- Campo de texto para comentarios adicionales -->
+                <div class="form-group">
+                    <label for="comentarios">¿Quieres comentar o preguntar algo?</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                </div>
+            </fieldset>
+        
+            <!-- Grupo de campos para elegir el método de pago -->
+            <fieldset>
+                <legend>Elige un método de pago *</legend>
+                <div class="radio-group">
+                    <label><input type="radio" id="transferencia" name="pago" value="transferencia" required> Transferencia</label>
+                    <label><input type="radio" id="tarjeta" name="pago" value="tarjeta" required> Tarjeta de débito / crédito</label>
+                    <label><input type="radio" id="efectivo" name="pago" value="efectivo" required> En efectivo</label>
+                </div>
+            </fieldset>
+        
+            <!-- Información sobre protección de datos -->
+            <div class="privacy-info">
+                <p class="formulario--p__privacidad">
+                    INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <span class="texto__oscuro">EL TALLER</span>. <span class="texto__oscuro">Finalidades</span>: recogida de datos para la inscripción como socio del interesado. <span class="texto__oscuro">Legitimación</span>: Consentimiento del interesado. <span class="texto__oscuro">Destinatarios</span>: No están previstas cesiones de datos a terceros, excepto obligación legal. <span class="texto__oscuro">Derechos</span>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a href="mailto:info@eltaller.es" class="enlaces--textoBoton">info@eltaller.es</a>. <span class="texto__oscuro">Información Adicional</span>: Puede ampliar la información en el enlace de <a href="#" class="enlaces--textoBoton">Aviso Legal</a> y <a href="#" class="enlaces--textoBoton">Política de privacidad</a>.
+                </p>
+                <!-- Checkbox para aceptar la política de privacidad -->
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="privacidad" name="privacidad" required> He leído y acepto la <a href="#" class="enlaces--textoBoton">política de privacidad</a> *</label>
+                </div>
+            </div>
+        
+            <!-- Botón de envío del formulario -->
+            <button type="submit">Inscríbeme</button>
+        </form>
+    </main>
+
+    <!-- Pie de página con enlaces y derechos de autor -->
+    <footer>
+        <nav>
+            <!-- Enlace al aviso legal -->
+            <a href="#" class="enlaces--NOTexto">Aviso legal</a>
+            <!-- Enlace a la política de privacidad -->
+            <a href="#" class="enlaces--NOTexto">Política de privacidad</a>
+            <!-- Enlace a la política de cookies -->
+            <a href="#" class="enlaces--NOTexto">Política de cookies</a>
+        </nav>
+        <!-- Derechos de autor -->
+        <p class="rubrica">2023 © Moisés García García</p>
+    </footer>
+</body>
+</html>

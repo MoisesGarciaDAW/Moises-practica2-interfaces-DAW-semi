@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- Indicamos que el documento es HTML5 -->
+<html lang="es">
+<head>
+    <!-- Configuramos la codificación de caracteres a UTF-8 para soportar caracteres especiales como acentos -->
+    <meta charset="UTF-8">
+    <!-- Hacemos que el diseño sea responsive, adaptándose al tamaño de pantalla -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Proporcionamos una breve descripción del contenido de la página, útil para motores de búsqueda -->
+    <meta name="description" content="Página explicativa del curso de cerámica de 2023.">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Curso de cerámica 2023</title>
+    <!-- Enlazamos el archivo CSS donde se definen los estilos de la página -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Preconectamos con Google Fonts para acelerar la carga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Enlazamos la fuente "Work Sans" desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Título principal con la imagen del logo y el nombre del taller -->
+        <a href="index.html" id="enlace--titulo">
+            <h1 class="Texto--fondoNegro">
+                <img src="img/isologo-taller.png" alt="El Taller logo"> el taller
+            </h1>
+        </a>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <!-- Elemento de lista con enlace al apartado "Cerámica" -->
+                <li>
+                    <a href="que-es-la-ceramica.html" class="enlaces--NOTexto">CERÁMICA</a>
+                </li>
+                <!-- Elemento de lista con enlace al apartado "Cursos" con un id que indica que está activo -->
+                <li>
+                    <a href="cursos.html" id="enlace--activo" class="enlaces--NOTexto">CURSOS</a>
+                </li>
+                <!-- Elemento de lista con enlace al apartado "Inscripción" -->
+                <li>
+                    <a href="inscripcion-cursos.html" class="enlaces--NOTexto">INSCRIPCIÓN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Inicio del contenido principal de la página -->
+    <main>
+        <section>
+            <!-- Subtítulo o título secundario para el contenido de cursos -->
+            <h2>
+                Cursos de cerámica
+            </h2>
+            <!-- Párrafo que indica el año del curso -->
+            <p id="año">
+                2023
+            </p>
+            <!-- Imagen relacionada con los cursos, con una leyenda que indica los créditos de la imagen -->
+            <figure id="foto--curso">
+                <img src="img/cursos-ceramica.jpg" alt="foto de Courtney en Unsplash ">
+                <figcaption>
+                    © Foto de <a href="https://unsplash.com/@courtneymcook">Courtney Cook</a> en <a href="https://unsplash.com/es/fotos/jZLozXwxgbo">Unsplash</a>
+                </figcaption>
+            </figure>
+            <!-- Descripción breve de los cursos de cerámica ofrecidos -->
+            <p id="p__gigante">
+                Cursos de cerámica para todos los niveles. Artesanos expertos te guiarán para que aprendas el oficio y des rienda suelta a tu creatividad.
+            </p>
+            <!-- Tabla que muestra la programación de los cursos -->
+            <table>
+                <!-- Título de la tabla -->
+                <caption>Programación de cursos</caption>
+                <!-- Encabezado de la tabla que describe cada columna -->
+                <thead>
+                    <tr>
+                        <th>Cursos</th>
+                        <th>Precio</th>
+                        <th>Duración</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <!-- Cuerpo de la tabla con información de cada curso -->
+                <tbody>
+                    <tr>
+                        <td>Torno</td>
+                        <td>150 €</td>
+                        <td>4 horas</td>
+                        <td>Un sábado al mes de 10 a 14 h</td>
+                    </tr>
+                    <tr>
+                        <td>Cerámica</td>
+                        <td>100 €</td>
+                        <td>4 horas</td>
+                        <td>Jueves alternos de 19 a 21 h</td>
+                    </tr>
+                    <tr>
+                        <td>Modelado</td>
+                        <td>200 €</td>
+                        <td>12 horas</td>
+                        <td>Un miércoles al mes de 18 a 21 h</td>
+                    </tr>
+                    <tr>
+                        <td>Esmaltes</td>
+                        <td>250 €</td>
+                        <td>16 horas</td>
+                        <td>Martes y Jueves de 19 a 21 h</td>
+                    </tr>
+                    <tr>
+                        <td>Joyería cerámica</td>
+                        <td>160 €</td>
+                        <td>4 horas</td>
+                        <td>Un viernes al mes de 16 a 20 h</td>
+                    </tr>
+                </tbody>
+                <!-- Pie de la tabla que indica un mensaje adicional -->
+                <tfoot>
+                    <tr>
+                        <td colspan="4" id="table--caption__abajo">Plazas limitadas a 15 alumnos por sesión</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <!-- Pie de página con enlaces y derechos de autor -->
+    <footer>
+        <nav>
+            <!-- Enlace al aviso legal -->
+            <a href="#" class="enlaces--NOTexto">Aviso legal</a>
+            <!-- Enlace a la política de privacidad -->
+            <a href="#" class="enlaces--NOTexto">Política de privacidad</a>
+            <!-- Enlace a la política de cookies -->
+            <a href="#" class="enlaces--NOTexto">Política de cookies</a>
+        </nav>
+        <!-- Derechos de autor -->
+        <p class="rubrica">2023 © Moisés García García</p>
+    </footer>
+</body>
+</html>
+    
